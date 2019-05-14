@@ -81,6 +81,22 @@ public class TileCraftingStorageTile extends TileCraftingTile
 	}
 
 	@Override
+	public boolean is8coreAccelerator()
+	{
+		return false;
+	}
+
+	@Override
+	public boolean is64coreAccelerator() {
+		return false;
+	}
+
+	@Override
+	public boolean is512coreAccelerator() {
+		return false;
+	}
+
+	@Override
 	public boolean isStorage()
 	{
 		return true;

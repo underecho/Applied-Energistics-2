@@ -215,6 +215,9 @@ public final class ApiBlocks implements IBlocks
 	private final ITileDefinition energyCellCreative;
 	private final ITileDefinition craftingUnit;
 	private final ITileDefinition craftingAccelerator;
+	private final ITileDefinition craftingAccelerator8core;
+	private final ITileDefinition craftingAccelerator64core;
+	private final ITileDefinition craftingAccelerator512core;
 	private final ITileDefinition craftingStorage1k;
 	private final ITileDefinition craftingStorage4k;
 	private final ITileDefinition craftingStorage16k;
@@ -475,6 +478,21 @@ public final class ApiBlocks implements IBlocks
 				.build();
 		this.craftingAccelerator = crafting.block( "crafting_accelerator", () -> new BlockCraftingUnit( CraftingUnitType.ACCELERATOR ) )
 				.rendering( new CraftingCubeRendering( "crafting_accelerator", CraftingUnitType.ACCELERATOR ) )
+				.tileEntity( new TileEntityDefinition( TileCraftingTile.class, "crafting_unit" ) )
+				.useCustomItemModel()
+				.build();
+		this.craftingAccelerator8core = crafting.block( "crafting_accelerator_8core", () -> new BlockCraftingUnit( CraftingUnitType.ACCELERATOR_8CORE ) )
+				.rendering( new CraftingCubeRendering( "crafting_accelerator_8core", CraftingUnitType.ACCELERATOR_8CORE ) )
+				.tileEntity( new TileEntityDefinition( TileCraftingTile.class, "crafting_unit" ) )
+				.useCustomItemModel()
+				.build();
+		this.craftingAccelerator64core = crafting.block( "crafting_accelerator_64core", () -> new BlockCraftingUnit( CraftingUnitType.ACCELERATOR_64CORE ) )
+				.rendering( new CraftingCubeRendering( "crafting_accelerator_64core", CraftingUnitType.ACCELERATOR_64CORE ) )
+				.tileEntity( new TileEntityDefinition( TileCraftingTile.class, "crafting_unit" ) )
+				.useCustomItemModel()
+				.build();		
+		this.craftingAccelerator512core = crafting.block( "crafting_accelerator_512core", () -> new BlockCraftingUnit( CraftingUnitType.ACCELERATOR_512CORE ) )
+				.rendering( new CraftingCubeRendering( "crafting_accelerator_512core", CraftingUnitType.ACCELERATOR_512CORE ) )
 				.tileEntity( new TileEntityDefinition( TileCraftingTile.class, "crafting_unit" ) )
 				.useCustomItemModel()
 				.build();
@@ -1025,6 +1043,25 @@ public final class ApiBlocks implements IBlocks
 		return this.craftingAccelerator;
 	}
 
+	@Override
+	public ITileDefinition craftingAccelerator8core()
+	{
+		return this.craftingAccelerator8core;
+	}
+
+	@Override
+	public ITileDefinition craftingAccelerator64core()
+	{
+		return this.craftingAccelerator64core;
+	}
+
+	@Override
+	public ITileDefinition craftingAccelerator512core()
+	{
+		return this.craftingAccelerator512core;
+	}
+
+	
 	@Override
 	public ITileDefinition craftingStorage1k()
 	{
