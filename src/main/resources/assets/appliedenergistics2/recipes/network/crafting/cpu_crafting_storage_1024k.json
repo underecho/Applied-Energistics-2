@@ -1,0 +1,15 @@
+{
+    "result": {
+        "item": "appliedenergistics2:crafting_storage_1024k"
+    },
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "appliedenergistics2:crafting_unit"
+        },
+        {
+            "item": "extracells:storage.component",
+		    "data": 1
+        }
+    ]
+}

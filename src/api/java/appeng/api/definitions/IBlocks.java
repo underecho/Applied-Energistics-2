@@ -173,6 +173,12 @@ public interface IBlocks
 
 	ITileDefinition craftingAccelerator();
 
+	ITileDefinition craftingAccelerator8core();
+
+	ITileDefinition craftingAccelerator64core();
+
+	ITileDefinition craftingAccelerator512core();
+
 	ITileDefinition craftingStorage1k();
 
 	ITileDefinition craftingStorage4k();
@@ -180,6 +186,14 @@ public interface IBlocks
 	ITileDefinition craftingStorage16k();
 
 	ITileDefinition craftingStorage64k();
+
+	ITileDefinition craftingStorage256k();
+
+	ITileDefinition craftingStorage1024k();
+
+	ITileDefinition craftingStorage4096k();
+
+	ITileDefinition craftingStorage16384k();
 
 	ITileDefinition craftingMonitor();
 

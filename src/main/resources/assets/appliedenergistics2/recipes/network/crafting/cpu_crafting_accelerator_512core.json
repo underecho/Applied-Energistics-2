@@ -1,0 +1,19 @@
+{
+    "result": {
+        "item": "appliedenergistics2:crafting_accelerator_512core"
+    },
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "bbb",
+        "bab",
+        "bbb"
+    ],
+    "key": {
+        "a": {
+            "item": "appliedenergistics2:crafting_accelerator_8core"
+        },
+        "b": {
+            "item": "appliedenergistics2:crafting_accelerator_64core"
+        }
+    }
+}

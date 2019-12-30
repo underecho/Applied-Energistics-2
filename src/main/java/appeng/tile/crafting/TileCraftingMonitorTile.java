@@ -114,6 +114,21 @@ public class TileCraftingMonitorTile extends TileCraftingTile implements IColora
 	}
 
 	@Override
+	public boolean is8coreAccelerator() {
+		return false;
+	}
+
+	@Override
+	public boolean is64coreAccelerator() {
+		return false;
+	}
+
+	@Override
+	public boolean is512coreAccelerator() {
+		return false;
+	}
+
+	@Override
 	public boolean isStatus()
 	{
 		return true;

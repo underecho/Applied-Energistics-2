@@ -48,7 +48,14 @@ tile.appliedenergistics2.crafting_storage_1k.name=1k Crafting Storage
 tile.appliedenergistics2.crafting_storage_4k.name=4k Crafting Storage
 tile.appliedenergistics2.crafting_storage_16k.name=16k Crafting Storage
 tile.appliedenergistics2.crafting_storage_64k.name=64k Crafting Storage
+tile.appliedenergistics2.crafting_storage_256k.name=256k Crafting Storage
+tile.appliedenergistics2.crafting_storage_1024k.name=1024k Crafting Storage
+tile.appliedenergistics2.crafting_storage_4096k.name=4096k Crafting Storage
+tile.appliedenergistics2.crafting_storage_16384k.name=16384k Crafting Storage
 tile.appliedenergistics2.crafting_accelerator.name=Crafting Co-Processing Unit
+tile.appliedenergistics2.crafting_accelerator_8core.name=8 Core Crafting Co-Processing Unit
+tile.appliedenergistics2.crafting_accelerator_64core.name=64 Core Crafting Co-Processing Unit
+tile.appliedenergistics2.crafting_accelerator_512core.name=512 Core Crafting Co-Processing Unit
 tile.appliedenergistics2.crafting_unit.name=Crafting Unit
 tile.appliedenergistics2.molecular_assembler.name=Molecular Assembler
 

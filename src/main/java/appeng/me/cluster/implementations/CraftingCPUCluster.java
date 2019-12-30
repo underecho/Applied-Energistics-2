@@ -27,6 +27,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import javax.swing.text.Caret;
+
 import com.google.common.collect.ImmutableList;
 
 import net.minecraft.inventory.InventoryCrafting;
@@ -63,6 +65,8 @@ import appeng.api.storage.channels.IItemStorageChannel;
 import appeng.api.storage.data.IAEItemStack;
 import appeng.api.storage.data.IItemList;
 import appeng.api.util.WorldCoord;
+import appeng.block.crafting.BlockCraftingUnit;
+import appeng.block.crafting.BlockCraftingUnit.CraftingUnitType;
 import appeng.container.ContainerNull;
 import appeng.core.AELog;
 import appeng.crafting.CraftBranchFailure;
@@ -220,6 +224,18 @@ public final class CraftingCPUCluster implements IAECluster, ICraftingCPU
 		else if( te.isAccelerator() )
 		{
 			this.accelerator++;
+		}
+		else if( te.is8coreAccelerator() )
+		{
+			this.accelerator += 8;
+		}
+		else if( te.is64coreAccelerator() )
+		{
+			this.accelerator += 64;
+		}
+		else if( te.is512coreAccelerator() )
+		{
+			this.accelerator += 512;
 		}
 	}
 
